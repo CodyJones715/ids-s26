@@ -338,5 +338,35 @@
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Python Refreshment</span>"
     ]
+  },
+  {
+    "objectID": "95-exercises.html",
+    "href": "95-exercises.html",
+    "title": "5  Exercises",
+    "section": "",
+    "text": "5.1 Homework 1\nQuarto and Git setup: Quarto and Git are two important tools for data science: Quarto for communicating results (reports/websites/books) and Git/GitHub for version control and collaboration. This homework is about getting familiar with them through the following tasks.\nYour goal: produce a short, beginner-friendly step-by-step manual for yourself (and future students) that documents what you did, what went wrong, and how you fixed it. Please use the templates/hw.qmd as your starting point. Use the command line interface.\nWork in your GitHub Classroom repository (the private repo created for you when you accept the assignment link). Use the command line interface unless a step explicitly requires a browser (e.g., adding an SSH key).\nSubmission (What should be included in your repo)\nTasks\nIn hw.qmd, record exactly what you installed (version + method), and any issues you hit (PATH problems are common) and how you fixed them.\nimport numpy as np\nimport matplotlib.pyplot as plt\n\nr = np.arange(0, 2, 0.01)\ntheta = 2 * np.pi * r\nfig, ax = plt.subplots(subplot_kw={\"projection\": \"polar\"})\nax.plot(theta, r)\nax.set_rmax(2.0)\nax.grid(True)\nplt.show()\nRender the homework into a HTML. Print the HTML file to a pdf file and put the file into a release in your GitHub repo.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "95-exercises.html#homework-1",
+    "href": "95-exercises.html#homework-1",
+    "title": "5  Exercises",
+    "section": "",
+    "text": "hw.qmd (your completed manual)\nhw.html (rendered from hw.qmd)\nhw.pdf\n\n\n\nAccept the GitHub Classroom assignment and clone your repo (SSH).\n\n\nAccept the assignment using the GitHub Classroom link provided on HuskyCT.\nIn a terminal, verify Git is installed:\n\ngit --version\n\nSet your Git identity (do this once per computer):\n\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"XXX@uconn.edu\" (use the email tied to your GitHub account if different).\n\n\n\nSet up SSH authentication between your computer and GitHub. There are online tutorials with more details.\n\n\nCheck whether you already have an SSH key: +ls -al ~/.ssh\nIf you do not see something like id_ed25519 and id_ed25519.pub, create a new key:\n\nssh-keygen -t ed25519 -C \"your_email@example.com\"\nPress Enter to accept the default location (~/.ssh/id_ed25519)\nChoose a passphrase or press Enter for none\n\nStart the SSH agent and add your key:\n\neval \"$(ssh-agent -s)\"\nssh-add ~/.ssh/id_ed25519\n\nCopy your public key and add it to GitHub:\n\ncat ~/.ssh/id_ed25519.pub\nIn your browser: GitHub → Settings → SSH and GPG keys → New SSH key\n\nTest the connection:\n\nssh -T git@github.com\nYou should see a message that you have successfully authenticated.\n\nNow clone your GitHub Classroom repo (SSH) and enter it:\n\ngit clone git@github.com:&lt;ORG&gt;/&lt;REPO&gt;.git\ncd &lt;REPO&gt;\n\n\n\nSet up the homework file in your repo.\n\n\nDownload/copy the template into your Classroom repo as hw.qmd.\nMake an initial commit:\n\ngit status\ngit add hw.qmd\ngit commit -m \"Start HW1\"\ngit push\n\n\n\nInstall Quarto and verify it works. Follow the official installation instructions at https://quarto.org/docs/get-started/ for your operating system. Then verify:\n\nquarto --version\nquarto check\n\n\n\n\nPick an editor/tool and reproduce the “line plot on polar axis” example.\n\n\n\nChoose one tool (e.g., VS Code, Jupyter, Positron, Emacs) and follow the Quarto documentation to reproduce the example plot.\nMinimum requirement: include the plot in your hw.qmd using a Python code cell that produces a polar line plot with Matplotlib. For example:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Exercises</span>"
+    ]
+  },
+  {
+    "objectID": "99-references.html",
+    "href": "99-references.html",
+    "title": "References",
+    "section": "",
+    "text": "American Statistical Association (ASA). (2018). Ethical guidelines\nfor statistical practice.\n\n\nComputing Machinery (ACM), A. for. (2018). Code of ethics and\nprofessional conduct.\n\n\nCongress, U. S. (1990). Americans with disabilities act of 1990\n(ADA).\n\n\nHealth, U. S. D. of, & Services, H. (1996). Health insurance\nportability and accountability act of 1996 (HIPAA).\n\n\nProtection of Human Subjects of Biomedical, N. C. for the, &\nResearch, B. (1979). The belmont report: Ethical principles and\nguidelines for the protection of human subjects of research.\n\n\nTeam, F. D. S. D. (2019). Federal data strategy 2020 action\nplan.\n\n\nVanderPlas, J. (2016). Python data science handbook:\nEssential tools for working with data. O’Reilly Media,\nInc.\n\n\nYu, B., & Barter, R. L. (2024). Veridical data science: The\npractice of responsible data analysis and decision making. MIT\nPress.",
+    "crumbs": [
+      "References"
+    ]
   }
 ]
