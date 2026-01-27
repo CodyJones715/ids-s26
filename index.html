@@ -8,7 +8,7 @@
 
 <meta name="author" content="Kun Chen">
 <meta name="author" content="Jun Yan">
-<meta name="dcterms.date" content="2026-01-23">
+<meta name="dcterms.date" content="2026-01-27">
 
 <title>Introduction to Data Science</title>
 <style>
@@ -197,8 +197,14 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./05-ethics_communiacation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Data Science Ethics and Communication</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./95-exercises.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Exercises</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Exercises</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -282,7 +288,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 23, 2026</p>
+      <p class="date">January 27, 2026</p>
     </div>
   </div>
   
@@ -398,7 +404,12 @@ welcome to invite your family and friends to join the workshop.
 <li>Mohan, Harish</li>
 <li>Nash, Jayden</li>
 <li>Orsini, Ronnie</li>
-<li>Patel, Reesha</li>
+<li>Patel, Reesha
+<ul>
+<li>Learn about the process between identifying a problem/question and using data science to find solutitons/get insights.</li>
+<li>Improve my knowledge of packages in Python (scikit-learn, seaborn).</li>
+<li>Apply what I’ve learned in my classes to actual, real-world datasets.</li>
+</ul></li>
 <li>Patel, Vrajkumar</li>
 <li>Sawyer, Riley</li>
 <li>Sudarsanam, Shreya</li>
@@ -427,7 +438,7 @@ welcome to invite your family and friends to join the workshop.
 <section id="topic-presentation-orders" class="level3">
 <h3 class="anchored" data-anchor-id="topic-presentation-orders">Topic Presentation Orders</h3>
 <p>The topic presentation order is set up in class.</p>
-<div id="0eeb9d6e" class="cell" data-execution_count="1">
+<div id="d27055b6" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'rosters/3255.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ug <span class="op">=</span> [line.strip() <span class="cf">for</span> line <span class="kw">in</span> <span class="bu">file</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'rosters/5255.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
@@ -491,7 +502,7 @@ Random seed: 723</code></pre>
 <li>Import/Export data</li>
 <li>Data manipulation with <code>Pandas</code></li>
 <li>Accessing US census data <!-- + Arrow as a cross-platform data format --></li>
-<li>Database operation with Structured query language (SQL)</li>
+<li>Database operation with Structured Query Language (SQL)</li>
 <li>Grammar of graphics</li>
 <li>Visualizing spatial data</li>
 <li>Spatial data with <code>GeoPandas</code></li>
@@ -529,8 +540,8 @@ Random seed: 723</code></pre>
 <p>The topic presentation is 20 points. It includes:</p>
 <ul>
 <li>Topic selection consultation in advance (4 points).</li>
-<li>Delivering the presentation in class (10 points).</li>
-<li>Contribute to the class notes within two weeks following the presentation (6 points).</li>
+<li>Delivering the presentation in class (8 points). Your presentation should be about 20 minutes.</li>
+<li>Contribute to the class notes within two weeks following the presentation (8 points).</li>
 </ul>
 <p>Please use the following table to sign up.</p>
 <table class="caption-top table">
@@ -543,17 +554,27 @@ Random seed: 723</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td>02/11</td>
+<td>02/16</td>
 <td>Last, First</td>
 <td>Selected topic</td>
 </tr>
 <tr class="even">
 <td>02/16</td>
+<td>Last, First</td>
+<td>Selected topic</td>
+</tr>
+<tr class="odd">
+<td>02/18</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>02/18</td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>02/18</td>
+<td>02/23</td>
 <td></td>
 <td></td>
 </tr>
@@ -568,12 +589,32 @@ Random seed: 723</code></pre>
 <td></td>
 </tr>
 <tr class="even">
+<td>02/25</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/02</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>03/02</td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>03/04</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>03/04</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/09</td>
 <td></td>
 <td></td>
 </tr>
@@ -588,12 +629,32 @@ Random seed: 723</code></pre>
 <td></td>
 </tr>
 <tr class="even">
+<td>03/11</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/23</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>03/23</td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>03/25</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>03/25</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>03/30</td>
 <td></td>
 <td></td>
 </tr>
@@ -608,12 +669,37 @@ Random seed: 723</code></pre>
 <td></td>
 </tr>
 <tr class="even">
+<td>04/01</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/06</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
 <td>04/06</td>
 <td></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td>04/08</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>04/08</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>04/13</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>04/13</td>
 <td></td>
 <td></td>
 </tr>
@@ -632,27 +718,27 @@ Random seed: 723</code></pre>
 </thead>
 <tbody>
 <tr class="odd">
-<td>04/13</td>
-<td></td>
-</tr>
-<tr class="even">
 <td>04/15</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>04/20</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>04/22</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>04/27</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>04/29</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Scheduled Final Exam Time</td>
 <td></td>
 </tr>
 </tbody>
@@ -669,7 +755,7 @@ Random seed: 723</code></pre>
 <li>Work on your qmd file, test with <code>quarto render</code>.</li>
 <li>When satisfied, commit and make a pull request with your quarto files and an updated <code>requirements.txt</code>.</li>
 </ul>
-<p>I have added a template file <code>_mysection.qmd</code> as an example, which is <code>include</code>ed in <code>index.qmd</code>. See also how <code>_ethics.qmd</code> is included into <code>intro.qmd</code> for example.</p>
+<p>I have added a template file <code>_mysection.qmd</code> as an example, which is <code>include</code>ed in <code>index.qmd</code>. See also how <code>_ethics.qmd</code> is included into <code>05-ethics_communication.qmd</code> for example.</p>
 <p>Here is a checklist to help smooth the process.</p>
 <ul>
 <li>Get approval for your topic at least one week in advance. Otherwise you loose points.</li>
@@ -775,7 +861,7 @@ code chunks, it would be hard to plagiarize. -->
 <h3 class="anchored" data-anchor-id="sub-topic-1">Sub Topic 1</h3>
 <p>Put materials on topic 1 here</p>
 <p>Python examples can be put into <code>python</code> code chunks:</p>
-<div id="658c11fa" class="cell" data-execution_count="2">
+<div id="31e15a05" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import pandas as pd</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># do something</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
