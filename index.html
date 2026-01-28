@@ -8,7 +8,7 @@
 
 <meta name="author" content="Kun Chen">
 <meta name="author" content="Jun Yan">
-<meta name="dcterms.date" content="2026-01-27">
+<meta name="dcterms.date" content="2026-01-28">
 
 <title>Introduction to Data Science</title>
 <style>
@@ -288,7 +288,7 @@ div.csl-indent {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 27, 2026</p>
+      <p class="date">January 28, 2026</p>
     </div>
   </div>
   
@@ -438,7 +438,7 @@ welcome to invite your family and friends to join the workshop.
 <section id="topic-presentation-orders" class="level3">
 <h3 class="anchored" data-anchor-id="topic-presentation-orders">Topic Presentation Orders</h3>
 <p>The topic presentation order is set up in class.</p>
-<div id="d27055b6" class="cell" data-execution_count="1">
+<div id="ecf08b69" class="cell" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'rosters/3255.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    ug <span class="op">=</span> [line.strip() <span class="cf">for</span> line <span class="kw">in</span> <span class="bu">file</span>]</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'rosters/5255.txt'</span>, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
@@ -449,46 +449,46 @@ welcome to invite your family and friends to join the workshop.
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> random</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">## seed jointly set by the class</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>seed_s26 <span class="op">=</span> <span class="dv">723</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>seed_s26 <span class="op">=</span> <span class="dv">723</span> <span class="op">+</span> <span class="dv">2026</span> <span class="op">+</span> <span class="dv">125</span> </span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Random seed: </span><span class="sc">{</span>seed_s26<span class="sc">}</span><span class="ss">"</span>)</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>random.seed(seed_s26)</span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>random.sample(presenters, <span class="bu">len</span>(presenters))</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="co">## random.shuffle(presenters) # This would shuffle the list in place</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Number of presenters: 30
-Random seed: 723</code></pre>
+Random seed: 2874</code></pre>
 </div>
 <div class="cell-output cell-output-display" data-execution_count="1">
-<pre><code>['Mohan, Harish',
- 'Desai, Alysha',
- 'Faisal, Zaynab',
+<pre><code>['Desai, Alysha',
+ 'Kwak, Jinha',
  'Jackson, Brooke',
- 'Wolven, Alexander',
  'Sudarsanam, Shreya',
- 'Watanabe, Sara',
+ 'Sawyer, Riley',
+ 'Faisal, Zaynab',
  'Tessman, Sean',
  'Nash, Jayden',
+ 'Watanabe, Sara',
+ 'Jiang, Ryan',
+ 'Jones, Cody',
  'Davis, Reid',
  'Lawrence, Claire',
- 'Budnick, Kayleigh',
+ 'Trnka, Jonathan',
+ 'Orsini, Ronnie',
+ 'Patel, Vrajkumar',
  'Liu, Kevin',
  'Landolphi, Joseph',
- 'Bennett, Emily',
- 'Ibrahim, Omar',
- 'Mccabe, Scott',
- 'Carbone, Vincenzo',
  'Burns, Kyle',
- 'Zhang, Jianan',
- 'Kwak, Jinha',
- 'Lacasse, Violet',
+ 'Mohan, Harish',
+ 'Carbone, Vincenzo',
+ 'Bennett, Emily',
+ 'Budnick, Kayleigh',
+ 'Ibrahim, Omar',
  'Patel, Reesha',
- 'Jiang, Ryan',
- 'Trnka, Jonathan',
- 'Zharyy, Sofia',
- 'Sawyer, Riley',
- 'Orsini, Ronnie',
- 'Jones, Cody',
- 'Patel, Vrajkumar']</code></pre>
+ 'Zhang, Jianan',
+ 'Mccabe, Scott',
+ 'Lacasse, Violet',
+ 'Wolven, Alexander',
+ 'Zharyy, Sofia']</code></pre>
 </div>
 </div>
 <p>Switching slots is allowed as long as you find someone who is willing to switch with you. In this case, make a pull request to switch the order and let me know.</p>
@@ -708,7 +708,7 @@ Random seed: 723</code></pre>
 </section>
 <section id="final-project-presentation-schedule" class="level3">
 <h3 class="anchored" data-anchor-id="final-project-presentation-schedule">Final Project Presentation Schedule</h3>
-<p>We use the same order as the topic presentation for undergraduate final presentation. An <a href="https://github.com/statds/ids-f24/blob/main/templates/presentation.qmd">introduction on how to use Quarto to prepare presentation slides</a> is available under the <code>templates</code> directory in the classnotes source tree, thank to Zachary Blanchard, which can be used as a template to start with.</p>
+<p>We use the same order as the topic presentation for undergraduate final presentation. An <a href="https://github.com/statds/ids-s26/blob/main/templates/presentation.qmd">introduction on how to use Quarto to prepare presentation slides</a> is available under the <code>templates</code> directory in the classnotes source tree, thank to Zachary Blanchard, which can be used as a template to start with.</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -755,7 +755,7 @@ Random seed: 723</code></pre>
 <li>Work on your qmd file, test with <code>quarto render</code>.</li>
 <li>When satisfied, commit and make a pull request with your quarto files and an updated <code>requirements.txt</code>.</li>
 </ul>
-<p>I have added a template file <code>_mysection.qmd</code> as an example, which is <code>include</code>ed in <code>index.qmd</code>. See also how <code>_ethics.qmd</code> is included into <code>05-ethics_communication.qmd</code> for example.</p>
+<p>I have added a template file <code>_mysection.qmd</code> as an example, which is includeed in <code>index.qmd</code>. See also how <code>_ethics.qmd</code> is included into <code>05-ethics_communication.qmd</code> for example.</p>
 <p>Here is a checklist to help smooth the process.</p>
 <ul>
 <li>Get approval for your topic at least one week in advance. Otherwise you loose points.</li>
@@ -861,7 +861,7 @@ code chunks, it would be hard to plagiarize. -->
 <h3 class="anchored" data-anchor-id="sub-topic-1">Sub Topic 1</h3>
 <p>Put materials on topic 1 here</p>
 <p>Python examples can be put into <code>python</code> code chunks:</p>
-<div id="31e15a05" class="cell" data-execution_count="2">
+<div id="a9860699" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import pandas as pd</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="co"># do something</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
