@@ -174,6 +174,10 @@ Markdown.
     - Build a strong reproducible workflow with Git, Quarto, and Python.
     - Gain experience with real-world datasets.
 + Trnka, Jonathan
++ Trnka, Jonathan
+    - I want to get more comfortable using github, linux commands, and more.
+    - Learn more about ML and AI modeling. 
+    - I want to apply what I know to real world data sets from beginning to end.
 + Watanabe, Sara
 + Wolven, Alexander
 + Zhang, Jianan
